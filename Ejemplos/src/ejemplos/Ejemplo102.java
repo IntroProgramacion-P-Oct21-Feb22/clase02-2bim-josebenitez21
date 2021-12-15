@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author reroes
  */
-public class Ejemplo09 {
+public class Ejemplo102 {
 
     /**
      * @param args the command line arguments
@@ -20,20 +20,24 @@ public class Ejemplo09 {
         // Declarar y generar arreglos en Java
         
         // Se declara un arreglo de tipo double, llamado promedios
-        double[] promedios =  {8.1, 9, 9.5, 10, 9.9};
+        double[] promedios = {8.1, 9, 9.5, 10, 9.9};
         String[] estudiantes = {"Luis", "Ana", "Mónica", "José", "Juan"};
-        
         String mensajeFinal = ""; // variable que acumula un reporte final
         // Se hace uso del ciclo repetitivo for para recorrer los arreglos
         // y presentar los valore de las posiciones
         
         for (int i = 0; i < promedios.length; i++) { // estudiantes.length 
-            mensajeFinal = String.format("%sEstudiante:%s - promedio: %.4f\n", 
-                    mensajeFinal,
-                    estudiantes[i].toUpperCase(), //comando para hacer mayusculas.
-                                                  //Ojo: no se modifican los datos,
-                                                  //solo el reporte.
-                    promedios[i]);
+            // Se agrega los valores al reporte siempe y cuando
+            // el valor del estudiante sea 
+            // Luis O Ana
+            if (estudiantes[i].equals("Luis")|| estudiantes[i].equals("Ana")) {
+            
+                mensajeFinal = String.format("%sEstudiante:%s - promedio: "
+                        + "%.4f\n", 
+                        mensajeFinal,
+                        estudiantes[i],
+                        promedios[i]);
+            }  
         }
         
         System.out.printf("%s\n", mensajeFinal);

@@ -19,18 +19,25 @@ public class Ejemplo01 {
 
         // arreglo de tipo entero
         int[] arreglo1 = new int[5];
-
+        //Ejemplo en clase
+        int[] edadesPrimaria = new int[10];
         // arreglo de tipo double
         double[] arreglo2 = new double[5];
+        //ejemplo en clase 
+        double[] poblacionesPaises = new double[10];
 
         // arreglo de tipo char
         char[] arreglo3 = new char[5];
-
+        //ejemplo en clase 
+        char[] caracter = new char[4];
         // arreglo de tipo String
         String[] arreglo4 = new String[5];
-        
+        //ejemplo en clase 
+        String[] ciudadesEcuador = new String[10]; 
         // arreglo de tipo boleano
         boolean[] arreglo5 = new boolean[5];
+        //ejemplo en clase 
+        boolean[] informacion1 = new boolean[8];
     }
 
 }
